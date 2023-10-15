@@ -2,6 +2,7 @@
  * L298N H Bridge Driver using PWM
  * Sarvjit Ajit Patil 20862
  * Date : 08/08/2023
+ * Microstepping
  */
 
 
