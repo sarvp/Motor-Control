@@ -12,7 +12,7 @@
 
 * RPM Setting
     - Using PWM
-    - Feedback (not implemeted, not required)
+    - Feedback (not implemented, not required)
 
 * Hardware
   * TIVA-C: TM4C123GH6PM
