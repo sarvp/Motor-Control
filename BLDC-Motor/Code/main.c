@@ -1,7 +1,9 @@
 /*
- * L298N H Bridge Driver using PWM
+ * BLDC Drive using Oriental BLH2D-15KD driver
  * Sarvjit Ajit Patil 20862
- * Date : 08/08/2023
+ * Date : 18/08/2023
+ * PWM PE4 for RPM Control
+ * Use GUI for sending commands / operating motor
  */
 
 
