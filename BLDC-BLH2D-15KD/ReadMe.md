@@ -1,24 +1,34 @@
 >#  BLDC Motor Control
 
-* Drive
-  * Six step drive
+* Driver
+  * BLH2D-15KD
+    * RPM Control
+    * Brake Control
+    * Torque Control
+    * Acceleration, deceleration time control
 
-* Torque Control
-    - Current Control -Pending
+* Torque Setting
+    - Not Implemented (not required)
 
-* RPM 
-    - Synchronization -Pending
-    - Start-up -Pending
+* RPM Setting
+    - Using PWM
+    - Feedback (not implemeted, not required)
 
 * Hardware
   * TIVA-C: TM4C123GH6PM
-  * L298N Dual H-bridge
+  * BLH2D-15KD
 
 
 * Peripherals Interfaced
   * GPIOs
-  * PWM
-  * ADC (Digital Comparator for ON-OFF control)
-  * UART (Debugging)
+  * PWM (RPM)
+  * UART (GUI Commands)
   * SysTick
-  * General Purpose Timer
+
+* GUI
+  * Start
+  * Instantaneous Stop (Brakes)
+  * Decelerated Stop (No Brakes)
+  * RPM Setting
+  * Forward (Clockwise)
+  * Reverse (Counter Clockwise)  
