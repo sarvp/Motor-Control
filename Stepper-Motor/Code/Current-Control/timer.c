@@ -109,6 +109,7 @@ void TIMER_0_A_Handler(void)
     }
 
     GPIO_PORTB_DATA_R = half_step_seq[sequence] ;
+    // GPIO_PORTB_DATA_R = full_step_seq[sequence] ;
 }
 
 inline void set_TIMER0_cnt(long cnt)
