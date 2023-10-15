@@ -185,22 +185,7 @@ int main(void)
             int P_f = (int) (Position) % 1000 ;
             sprintf(str,"Read Position = %d.%d\n", P_i, P_f);
             uart0_send_str(str);
-//
-//            float rpm = (6400 * ( (QEI0_SPEED_R) ) * 60) / (2048 * 4);
-//            rpm = rpm * 1000 ;
-//
-//            int R_i = (int)(rpm) / 1000;
-//            int R_f = (int) (rpm) % 1000 ;
-//            sprintf(str,"RPM = %d.%d\n", R_i, R_f);
-//            uart0_send_str(str);
 
-//            int set_Curr_ADC = ((I_Set * 4.095) / 3.3);
-//
-//            ADC0_DCCMP1_R   = ((int)set_Curr_ADC<<16);    // Set high region threshold for DC1
-//            ADC1_DCCMP2_R   = ((int)set_Curr_ADC<<16);    // Set high region threshold for DC2
-
-//            sprintf(str,"Set Current = %d mA\n", I_Set);
-//            uart0_send_str(str);
             rx0_command_flag = 0 ;
 
         }
@@ -209,44 +194,9 @@ int main(void)
         for(int i = 0; i < 360; i++)
         {
             update_PWM(i,2);
-//            delayMs(2) ;
-
-//            sprintf(str,"Set Position = %d.%d\n", i, 0);
-//            uart0_send_str(str);
-//            Position = ( QEI0_POS_R * 360 ) / ( 8192 ) ;
-//            Position = Position * 1000 ;
-//
-//            int P_i = (int)(Position) / 1000;
-//            int P_f = (int) (Position) % 1000 ;
-//            sprintf(str,"Read Position = %ld.%d\n", P_i*200, P_f);
-//            uart0_send_str(str);
-//        }
-//        if ( h_us_stepper_counter > (15000/(RPM)) )
-//        {
-//            h_us_stepper_counter = 0 ;
-//
-//            sequence = sequence + (5*DIR);
-//            update_PWM(sequence,2);
-//
-//            if( sequence > 359 )
-//            {
-//                    sequence = 0 ;
-//            }
-//            else if( sequence < 0 )
-//            {
-//                sequence = 359 ;
-//            }
-
-//            float rpm = (6400 * ( (QEI0_SPEED_R) ) * 60) / (2048 * 4);
-//            rpm = rpm * 1000 ;
-//
-//            int R_i = (int)(rpm) / 1000;
-//            int R_f = (int) (rpm) % 1000 ;
-//            sprintf(str,"RPM = %d.%d\n", R_i, R_f);
-//            uart0_send_str(str);
         }
 
-        /* Half Step/ Full Step */
+        /* Half Step/ Full Step */ /*Dont uncomment if want to use General Purpose Timer instead of SysTick*/
 //        if ( h_us_stepper_counter > (15000/RPM) )
 //        {
 //            h_us_stepper_counter = 0 ;
