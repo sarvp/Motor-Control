@@ -32,9 +32,9 @@
 ># Intruder Detection System
 * Smart Password Protected Mat
 * [ReadMe](https://github.com/sarvp/All-Projects/blob/main/ReadMe-Intruder%20Detection%20Mat.md) 
-* [Presentation Slide](https://github.com/sarvp/All-Projects/blob/main/Intruder%20Detection%20Mat.pptx)
+* [Presentation Slides](https://github.com/sarvp/All-Projects/blob/main/Intruder%20Detection%20Mat.pptx)
 
->## Other Projects
+># Other Projects
 
 ### Selective Laser Sintering Additive Manufacturing Machine (MTech Major Project) (June 23-Present)
 * Key Terms: Laser-Galvo, Scan-head, Scan Card, Powder Hopping and Recoating, Build Chamber
