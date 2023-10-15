@@ -130,8 +130,18 @@ int main(void)
 
     ADC_1_SS_1_INIT();
 
+    /*Comment lines if want to use General Purpose Timer instead of SysTick*/
     int DIR = -1 ;
+    /*Comment till here*/
 
+    /*Uncomment the following 5 lines if want to use General Purpose Timer instead of SysTick */
+    // TIMER0_INIT();
+
+    // set_TIMER0_L(15000/RPM);
+
+    // start_TIMER0_A();
+    /* till here */
+    
     while(1)
     {
         if ( rx0_command_flag )
@@ -149,6 +159,7 @@ int main(void)
 
         }
 
+        /*Comment the following  12 lines if want to use General Purpose Timer instead of SysTick*/
         if ( h_us_stepper_counter > (15000/RPM) )
         {
             h_us_stepper_counter = 0 ;
@@ -162,7 +173,7 @@ int main(void)
             {
                 sequence = 7 ;
             }
-
+        /*till here*/
         }
 
         GPIO_PORTB_DATA_R = half_step_seq[sequence] ;
